@@ -133,22 +133,6 @@ class BottomOverlay extends StatelessWidget {
                   ),
                 ),
                 const VerticalDiv(),
-                Expanded(
-                  child: TextButton.icon(
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/douaa');
-                    },
-                    icon: SvgPicture.asset(AppAsset.hand),
-                    label: const FittedBox(
-                      child: FittedBox(
-                        child: Text(
-                          AppConstant.douaa,
-                          style: textStyle,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
