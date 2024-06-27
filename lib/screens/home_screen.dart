@@ -26,7 +26,6 @@ class HomeScreen extends StatelessWidget {
     final isKeyboardOpen = MediaQuery.of(context).viewInsets.bottom > 0;
     final colorScheme = Theme.of(context).colorScheme;
 
-    debugPrint('Hole rebuild');
     return SafeArea(
       child: GestureDetector(
         onTap: overlay.toggleisShowOverlay,
