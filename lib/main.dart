@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:my_quran_app/providers/bookmark.dart';
 import 'package:my_quran_app/providers/theme_provider.dart';
 import 'package:my_quran_app/providers/toast.dart';
@@ -46,6 +47,7 @@ Future<void> main() async {
       child: const MyApp(),
     ),
   );
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
 
 class MyApp extends StatelessWidget {
