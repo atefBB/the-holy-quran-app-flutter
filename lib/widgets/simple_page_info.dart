@@ -18,15 +18,15 @@ class SimplePageInfo extends StatelessWidget {
       color: colorScheme.infoText,
     );
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           if (isLandscape)
             Text('${AppConstant.page} ${quran.currentPage}', style: textStyle),
+          Text(quran.surahName, style: textStyle),
           Text('${AppConstant.juz} ${quran.juz}', style: textStyle),
           Text(quran.hizbText, style: textStyle),
-          Text(quran.surahName, style: textStyle),
         ],
       ),
     );
