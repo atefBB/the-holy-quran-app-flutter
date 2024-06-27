@@ -21,11 +21,11 @@ String gethizbText(int page) {
 }
 
 String getSurahData(int surahNumber) {
-  return '${getPlaceOfRevelation(surahNumber)}, آياتها ${getNumberOfAyahs(surahNumber)}';
+  return '${getPlaceOfRevelation(surahNumber)}، آياتها ${getNumberOfAyahs(surahNumber)}';
 }
 
 String getSurahDataByPage(int page) {
-  return '${getPlaceOfRevelationByPage(page)}, آياتها ${getNumberOfAyahsByPage(page)}';
+  return '${getPlaceOfRevelationByPage(page)}، آياتها ${getNumberOfAyahsByPage(page)}';
 }
 
 String getSurahDataWithName(int page) {
