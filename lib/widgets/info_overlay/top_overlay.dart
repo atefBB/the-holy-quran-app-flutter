@@ -9,12 +9,12 @@ class TopOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomContainer(
+    return const CustomContainer(
       offsetY: -1,
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
+        children: [
           PageInfo(),
           PageSide(),
         ],

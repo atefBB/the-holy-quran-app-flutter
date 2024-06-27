@@ -36,7 +36,7 @@ class _GoToPagePopupState extends State<GoToPagePopup> {
       return -1;
     }
 
-    void _goToPage(String page) {
+    void goToPage(String page) {
       if (typedPage(page) != -1) {
         quran.goToPage(int.parse(page));
       }
@@ -64,7 +64,7 @@ class _GoToPagePopupState extends State<GoToPagePopup> {
                           currentPage = typedPage(text);
                         });
                       },
-                      onSubmitted: _goToPage,
+                      onSubmitted: goToPage,
                     ),
                   ),
                 ],
@@ -75,7 +75,7 @@ class _GoToPagePopupState extends State<GoToPagePopup> {
                 PageInfo(currentPage: currentPage),
                 const SizedBox(height: 10),
               ],
-              ActionButtons(_goToPage, textC: textC),
+              ActionButtons(goToPage, textC: textC),
             ],
           ),
         ),

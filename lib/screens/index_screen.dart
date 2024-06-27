@@ -26,7 +26,7 @@ class IndexScreen extends StatelessWidget {
       fontSize: 15,
     );
 
-    void _goToBookMark() {
+    void goToBookMark() {
       quran.goToPage(bookMark.markPage);
       overlay.toggleisShowOverlay();
       Navigator.pop(context);
@@ -37,7 +37,7 @@ class IndexScreen extends StatelessWidget {
         title: const Text(AppConstant.surahIndex),
         actions: [
           TextButton.icon(
-            onPressed: _goToBookMark,
+            onPressed: goToBookMark,
             icon: SvgPicture.asset(
               AppAsset.saveFilled,
               color: colorScheme.juzCardText,

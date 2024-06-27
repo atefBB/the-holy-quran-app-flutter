@@ -24,7 +24,7 @@ class BottomOverlay extends StatelessWidget {
     final themeListenFalse = Provider.of<ThemeProvider>(context, listen: false);
     final overlay = Provider.of<ShowOverlayProvider>(context, listen: false);
 
-    void _goToBookMark() {
+    void goToBookMark() {
       quran.goToPage(bookMark.markPage);
       overlay.toggleisShowOverlay();
     }
@@ -56,7 +56,7 @@ class BottomOverlay extends StatelessWidget {
                 Expanded(
                   flex: 5,
                   child: TextButton.icon(
-                    onPressed: _goToBookMark,
+                    onPressed: goToBookMark,
                     icon: SvgPicture.asset(AppAsset.saveFilled),
                     label: const FittedBox(
                       child: Text(

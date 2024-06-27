@@ -23,7 +23,7 @@ class JuzIndexScreen extends StatelessWidget {
       fontSize: 15,
     );
 
-    void _goToBookMark() {
+    void goToBookMark() {
       quran.goToPage(bookMark.markPage);
       overlay.toggleisShowOverlay();
       Navigator.pop(context);
@@ -34,7 +34,7 @@ class JuzIndexScreen extends StatelessWidget {
         title: const Text(AppConstant.ajzaa),
         actions: [
           TextButton.icon(
-            onPressed: _goToBookMark,
+            onPressed: goToBookMark,
             icon: SvgPicture.asset(
               AppAsset.saveFilled,
               color: colorScheme.juzCardText,

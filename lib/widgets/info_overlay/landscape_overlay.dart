@@ -28,7 +28,7 @@ class LandscapeOverlay extends StatelessWidget {
       fontSize: 15,
     );
 
-    void _goToBookMark() {
+    void goToBookMark() {
       quran.goToPage(bookMark.markPage);
       overlay.toggleisShowOverlay();
     }
@@ -83,7 +83,7 @@ class LandscapeOverlay extends StatelessWidget {
                 Expanded(
                   flex: 3,
                   child: TextButton.icon(
-                    onPressed: _goToBookMark,
+                    onPressed: goToBookMark,
                     icon: SvgPicture.asset(AppAsset.saveFilled),
                     label: const FittedBox(
                       child: Text(
