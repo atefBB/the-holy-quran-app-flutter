@@ -19,7 +19,7 @@ class PageNumber extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(5),
       child: Text(
-        '${AppConstant.page} ${quran.currentPage}',
+        '${quran.currentPage}',
         style: textStyle,
         textAlign: TextAlign.center,
       ),
