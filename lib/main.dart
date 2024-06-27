@@ -10,7 +10,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'core/index.dart';
 import 'providers/quran.dart';
 import 'providers/show_overlay_provider.dart';
-import 'screens/douaa_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/index_screen.dart';
 import 'screens/juz_index_screen.dart';
@@ -74,7 +73,6 @@ class MyApp extends StatelessWidget {
           routes: {
             '/index': (context) => const IndexScreen(),
             '/juz-index': (context) => const JuzIndexScreen(),
-            '/douaa': (context) => const DouaaScreen(),
             '/search': (context) => const SearchScreen(),
           },
         );
