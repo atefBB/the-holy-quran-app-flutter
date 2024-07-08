@@ -90,7 +90,7 @@ int getHizbPage(int hizb) {
 }
 
 String pageDir(int number) {
-  return 'assets/quran-images/page${formattedPageNumber(number)}.png';
+  return 'assets/imgs/${number}.png';
 }
 
 String formattedPageNumber(int number) {
