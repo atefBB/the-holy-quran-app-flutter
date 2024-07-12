@@ -90,7 +90,7 @@ int getHizbPage(int hizb) {
 }
 
 String pageDir(int number) {
-  return 'assets/imgs/${number}.png';
+  return 'assets/warsh/${number}.png';
 }
 
 String formattedPageNumber(int number) {
