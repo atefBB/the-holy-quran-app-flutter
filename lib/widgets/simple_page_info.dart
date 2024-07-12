@@ -26,7 +26,6 @@ class SimplePageInfo extends StatelessWidget {
             Text('${AppConstant.page} ${quran.currentPage}', style: textStyle),
           Text(quran.surahName, style: textStyle),
           Text('${AppConstant.juz} ${quran.juz}', style: textStyle),
-          Text(quran.hizbText, style: textStyle),
         ],
       ),
     );
