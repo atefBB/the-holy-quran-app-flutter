@@ -11,10 +11,10 @@ class AppColor {
   static const secondaryDark = secondaryLight;
 }
 
-// Further Color Cutomization
+// Further Color Customization
 extension CustomColorScheme on ColorScheme {
   Color get scaffold => brightness == Brightness.light
-      ? const Color(0xffFEFFDD)
+      ? const Color(0xffFFFFFF)
       : const Color(0xFF272727);
 
   Color get scaffoldBg => brightness == Brightness.light
