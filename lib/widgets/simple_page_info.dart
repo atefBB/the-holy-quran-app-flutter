@@ -17,6 +17,7 @@ class SimplePageInfo extends StatelessWidget {
       fontSize: 14,
       color: colorScheme.infoText,
     );
+    
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
       child: Row(
