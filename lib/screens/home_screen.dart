@@ -30,8 +30,7 @@ class HomeScreen extends StatelessWidget {
       child: GestureDetector(
         onTap: overlay.toggleisShowOverlay,
         child: Scaffold(
-          backgroundColor:
-              isLandscape && size.width > 500 ? colorScheme.scaffoldBg : null,
+          backgroundColor: isLandscape && size.width > 500 ? colorScheme.scaffoldBg : null,
           body: Center(
             child: Stack(
               alignment: Alignment.center,
@@ -73,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 const SimplePageInfo(),
-                                QuranPage(pageIndex: pageIndex),
+                                Expanded(child: QuranPage(pageIndex: pageIndex)),
                                 const PageNumber(),
                               ],
                             );
